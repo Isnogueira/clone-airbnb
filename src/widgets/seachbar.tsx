@@ -4,7 +4,7 @@ const Seachbar = () =>{
     return(
        <div className="search-bar">
         <input className="input-search"
-         type="text" placeholder="Digite sua pesquisa" />  
+         type="text" placeholder="Inicie sua pesquisa" />  
         <button className="button-search">
             <IconSearch 
             color="white"
