@@ -5,13 +5,13 @@ import Link from "next/link"
 
 const Navbar = () =>{
     return(
-        <> 
+        <div className="py-6 flex justify-between items-center">
             <Logo />
-            <nav>
-                <Link className="link-acomodacoes" href="/acomodacoes">Acomodações</Link>
-                <Link className="link-experiencias" href="/experiencias">Experiências</Link>
-                {/* <Link className="link-servicos" href="/servicos">Servicos</Link> */}
-            </nav>
+            <div  className="flex gap-6">
+                <Link className="font-semibold hover:opacity-100" href="/acomodacoes">Acomodações</Link>
+                <Link className="opacity-60 hover:opacity-100 " href="/experiencias">Experiências</Link>
+                {/* <Link className="opacity-60" href="/servicos">Servicos</Link> */}
+            </div>
              
            <IconButton 
            icon={(
@@ -22,7 +22,7 @@ const Navbar = () =>{
             )} >
             Entrar
            </IconButton>
-        </>
+        </div>
     )
 }
 

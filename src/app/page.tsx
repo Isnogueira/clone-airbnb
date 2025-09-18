@@ -1,18 +1,23 @@
+import Acomodacao from "@/widgets/acomodacoes";
+import HorizontalTabNav from "@/widgets/horizontal-tab-nav";
 import Navbar from "@/widgets/navbar";
 import Seachbar from "@/widgets/seachbar";
 
 export default function Home() {
   return (
     <>
-    <header>
-      <div className="container">
-          <Navbar />
-      </div>
+    <header className="container mx-auto">
+          <Navbar />   
+          <Seachbar />
     </header>          
-    <Seachbar />
-    <hr className="mt-5" />
-    <div className="border-green-500 border-2">Área conteúdos</div>
-    <div className="border-purple-500 border-2">Rodapé</div>
+    <hr className="my-3" />
+    <main className="container mx-auto">
+      <HorizontalTabNav />
+      <Acomodacao />
+    </main>
+    <footer className="container mx-auto">
+        Rodapé
+    </footer>
     </>
   );
 }
