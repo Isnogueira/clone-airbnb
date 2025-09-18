@@ -1,8 +1,9 @@
 'use client'
 
+import Acomodacao from "@/components/acomodacao/acomodacao"
 import Image from "next/image"
 
-const acomodacoes =[
+const listaAcomodacoes =[
      {
       "number": 1,
       "date": "8 - 13 de jan",
@@ -2262,21 +2263,31 @@ const acomodacoes =[
     }
 ]
 
-const Acomodacao = () => {
+const Acomodacoes = () => {
     return (
         <section className="py-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-4">
-            {acomodacoes.map((acomodacao, indice)=> (
+            {listaAcomodacoes.map((item, indice)=> (
                 <div key={indice}>
-                    <Image className="w-full aspect-square object-cover rounded-lg"
-                        src={acomodacao.photos[0].source}
-                        alt={acomodacao.photos[0].description}
+                    <Acomodacao 
+                    local={item.location.description}
+                    anfitriao={item.host}
+                    data={item.date}
+                    preco={item.price}
+                    nota={item.rating}
+                    preferidoHospedes={item.hasBadge}
+                    >
+                        <Image className="w-full aspect-square object-cover rounded-lg"
+                        src={item.photos[0].source}
+                        alt={item.photos[0].description}
                         width={300}
                         height={300}
-                    ></Image>
+                        ></Image>
+                    </Acomodacao>
+                  
                 </div>
             ))}
         </section>
     )
    
 }
-export default Acomodacao
+export default Acomodacoes

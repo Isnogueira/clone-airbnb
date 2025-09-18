@@ -10,7 +10,7 @@ export default function Home() {
           <Navbar />   
           <Seachbar />
     </header>          
-    <hr className="my-3" />
+    <hr className="my-3 opacity-10" />
     <main className="container mx-auto">
       <HorizontalTabNav />
       <Acomodacao />
