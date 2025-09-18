@@ -1,4 +1,5 @@
 import Acomodacao from "@/widgets/acomodacoes";
+import Footer from "@/widgets/footer";
 import HorizontalTabNav from "@/widgets/horizontal-tab-nav";
 import Navbar from "@/widgets/navbar";
 import Seachbar from "@/widgets/seachbar";
@@ -10,13 +11,13 @@ export default function Home() {
           <Navbar />   
           <Seachbar />
     </header>          
-    <hr className="my-3 opacity-10" />
+    <hr className="my-6 opacity-10" />
     <main className="container mx-auto">
       <HorizontalTabNav />
       <Acomodacao />
     </main>
-    <footer className="container mx-auto">
-        Rodapé
+    <footer className="bg-gray-200">
+        <Footer />
     </footer>
     </>
   );
