@@ -1,6 +1,5 @@
-'use client'
 
-import Acomodacao from "@/components/acomodacao/acomodacao"
+import Acomodacao from "@/components/acomodacao"
 import Image from "next/image"
 
 const listaAcomodacoes =[
