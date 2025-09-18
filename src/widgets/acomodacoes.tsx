@@ -1,6 +1,7 @@
 
 import Acomodacao from "@/components/acomodacao"
 import Image from "next/image"
+import Link from "next/link"
 
 const listaAcomodacoes =[
      {
@@ -2267,7 +2268,8 @@ const Acomodacoes = () => {
         <section className="py-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-4">
             {listaAcomodacoes.map((item, indice)=> (
                 <div key={indice}>
-                    <Acomodacao 
+                  <Link href={item.slug}>
+                  <Acomodacao 
                     local={item.location.description}
                     anfitriao={item.host}
                     data={item.date}
@@ -2282,7 +2284,7 @@ const Acomodacoes = () => {
                         height={300}
                         ></Image>
                     </Acomodacao>
-                  
+                  </Link>
                 </div>
             ))}
         </section>
