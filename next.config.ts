@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     images: {
       remotePatterns: [new URL('https://web.codans.com.br/airbnb/**')],
     },
+   
   }
 
 export default nextConfig;
