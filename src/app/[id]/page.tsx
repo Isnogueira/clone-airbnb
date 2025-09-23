@@ -221,11 +221,11 @@ export default async function Page(
           <Seachbar />
         </header>
         <hr className="my-6 opacity-10" />
-        <main className="container mx-auto py-6">
+        <main className="container mx-auto py-6 px-2">
           <h1 className="text-3xl font-semibold pb-2">{acomodacao.title}</h1>
           <Galery photos={acomodacao.photos} />
         </main>
-        <section className="container mx-auto flex flex-col md:flex-row lg:flex-row xl:flex-row ">
+        <section className="container mx-auto px-2 flex flex-col md:flex-row lg:flex-row xl:flex-row ">
           <AcomodacoesDetalhes accommodation={acomodacao}/>
           <AcomodacaoDepoimentos accommodation={acomodacao}/>
         </section>
