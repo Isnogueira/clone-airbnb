@@ -2272,7 +2272,7 @@ const Acomodacoes = (props: AcomodacoesProps) => {
   const acomodacoes = props.accommodations
 
     return (
-        <section className="py-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-4">
+        <section className="py-6 px-2 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-4">
             {acomodacoes.map((item, indice)=> (
                 <div key={indice}>
                   <Link href={item.slug}>

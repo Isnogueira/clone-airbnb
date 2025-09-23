@@ -393,11 +393,10 @@ const HorizontalTabNav = (props: HorizontalTabNavProps) =>{
     const icons = props.icons
 
     return(
-        <div className='flex flex-row items-center'>
+        <div className='flex flex-row items-center mx-2'>
             <Swiper className='!w-auto'
-            spaceBetween={10}
-
             breakpoints={{
+                546: {slidesPerView: 2},
                 640: {slidesPerView: 3},
                 764: {slidesPerView: 4},
                 1024: {slidesPerView: 6},

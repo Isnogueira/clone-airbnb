@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Footer = () => {
     return (
-        <div className="container mx-auto py-8">
+        <div className="container mx-auto py-8 px-2">
             <span className="text-lg font-semibold pb-4">&copy; AirBnb INC</span>
             <ul className="flex flex-row gap-2">
                 <li className="hover:text-red-500"><Link href="/">Privacidade</Link></li>
